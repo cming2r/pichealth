@@ -1,0 +1,133 @@
+/*
+  Localizable.strings (繁體中文)
+  HealthScanner
+*/
+
+// MARK: - Tab Bar
+"tab.records" = "紀錄";
+"tab.scan" = "掃描";
+"tab.settings" = "設定";
+
+// MARK: - Scan View
+"scan.title" = "健康數據掃描";
+"scan.description" = "拍攝血壓計、體重計、血糖計螢幕\n自動識別並儲存到健康 App";
+"scan.start" = "開始掃描";
+"scan.back" = "返回";
+"scan.openCamera" = "開啟相機";
+"scan.chooseFromLibrary" = "從相簿選擇";
+"scan.scanning" = "識別中...";
+"scan.error.title" = "掃描錯誤";
+"scan.error.unknown" = "未知錯誤";
+"scan.camera.permission.title" = "需要相機權限";
+"scan.camera.permission.message" = "需要相機權限才能開啟相機。請到「設定」中開啟相機權限。";
+"scan.camera.permission.settings" = "前往設定";
+
+// MARK: - Result Confirm View
+"result.title" = "確認數據";
+"result.detected" = "檢測到的數據";
+"result.measurementTime" = "測量時間";
+"result.notes" = "備註（可選）";
+"result.notes.placeholder" = "添加備註...";
+"result.save" = "儲存到健康 App";
+"result.saved" = "已儲存";
+"result.saving" = "正在儲存...";
+"result.cancel" = "取消";
+"result.confirm" = "確定";
+"result.noData.title" = "未檢測到數據";
+"result.noData.message" = "圖片中沒有識別到有效的健康數據。\n請確保：\n• 圖片清晰\n• 設備螢幕完整可見\n• 光線充足且無反光";
+"result.error.title" = "儲存錯誤";
+"result.permission.title" = "需要健康 App 權限";
+"result.permission.message" = "需要授權健康 App 才能儲存數據。";
+
+// MARK: - Health Data
+"health.bloodPressure" = "血壓";
+"health.pulse" = "脈搏";
+"health.height" = "身高";
+"health.weight" = "體重";
+"health.bloodSugar" = "血糖";
+"health.heartRate" = "心率";
+"health.bodyTemperature" = "體溫";
+"health.systolic" = "收縮壓";
+"health.diastolic" = "舒張壓";
+
+// MARK: - Blood Sugar Types
+"bloodSugar.fasting" = "（空腹）";
+"bloodSugar.postprandial" = "（餐後）";
+"bloodSugar.random" = "（隨機）";
+
+// MARK: - Time Relative
+"time.now" = "現在";
+"time.setToNow" = "設為現在";
+"time.future" = "未來時間";
+"time.minutesAgo" = "%d 分前";
+"time.hoursAgo" = "%d 小時前";
+"time.hoursMinutesAgo" = "%d 小時 %d 分前";
+"time.daysAgo" = "%d 天前";
+
+// MARK: - History View
+"history.title" = "紀錄";
+"history.filter.all" = "全部";
+"history.filter.select" = "選擇";
+"history.empty.title" = "尚無紀錄";
+"history.empty.message" = "開始掃描健康設備以建立紀錄";
+"history.delete.error" = "刪除紀錄失敗";
+"today" = "今天";
+"yesterday" = "昨天";
+
+// MARK: - Record Detail View
+"record.title" = "紀錄詳情";
+"record.value" = "數值";
+"record.details" = "詳細資訊";
+"record.time" = "紀錄時間";
+"record.syncStatus" = "同步至健康 App";
+"record.synced" = "已同步";
+"record.notSynced" = "未同步";
+"record.notes" = "備註";
+"record.photo" = "拍攝照片";
+"record.done" = "完成";
+
+// MARK: - Settings View
+"settings.title" = "設定";
+"settings.account" = "帳戶";
+"settings.appearance" = "外觀模式";
+"settings.appearance.system" = "系統預設";
+"settings.appearance.light" = "淺色";
+"settings.appearance.dark" = "深色";
+"settings.permissions" = "權限設定";
+"settings.permissions.needed" = "需要授權";
+"settings.permissions.footer.authorized" = "所有健康數據類型已授權，可以正常儲存掃描數據到健康 App";
+"settings.permissions.footer.unauthorized" = "授權後即可將掃描的體重、身高、血壓等數據儲存到健康 App";
+"settings.statistics" = "數據統計";
+"settings.totalRecords" = "總紀錄數";
+"settings.syncedRecords" = "已同步紀錄";
+"settings.about" = "關於";
+"settings.version" = "版本";
+"settings.openHealthApp" = "開啟健康 App";
+
+// MARK: - Account View
+"account.title" = "帳戶";
+"account.identifier" = "識別碼";
+"account.footer" = "此識別碼用於識別您的裝置，儲存在安全的 Keychain 中，即使刪除 App 也會保留";
+
+// MARK: - Health Permission Guide View
+"permission.title" = "健康 App 權限設定";
+"permission.steps.header" = "權限設定步驟";
+"permission.steps.footer" = "完成設定後，請返回此頁面確認權限狀態";
+"permission.step1.title" = "開啟健康 App";
+"permission.step2.title" = "點擊右上角-個人資訊";
+"permission.step3.title" = "進入隱私權-App";
+"permission.step4.title" = "找到 HealthScanner";
+"permission.step5.title" = "開啟所有權限";
+"permission.quickAction" = "開啟健康 App";
+
+// MARK: - Toast Messages
+"toast.saved" = "已儲存";
+"toast.copied" = "已複製";
+
+// MARK: - Common
+"common.ok" = "確定";
+"common.cancel" = "取消";
+"common.done" = "完成";
+"common.save" = "儲存";
+"common.delete" = "刪除";
+"common.error" = "錯誤";

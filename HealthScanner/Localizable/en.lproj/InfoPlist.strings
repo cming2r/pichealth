@@ -1,0 +1,6 @@
+/* Camera Permission */
+"NSCameraUsageDescription" = "Capture health device screens for data recognition";
+
+/* Health Kit Permissions */
+"NSHealthShareUsageDescription" = "Read health data to display your history records";
+"NSHealthUpdateUsageDescription" = "Write health data to save your scanned measurements";

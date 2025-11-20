@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCameraUsageDescription</key>
+	<string>拍攝健康設備以識別數據</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>需要讀取健康數據以顯示您的歷史紀錄</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>需要寫入健康數據以儲存您掃描的測量數據</string>
+	<key>OCR_API_KEY</key>
+	<string>f8e7d6c5b4a39281706f5e4d3c2b1a0987654321fedcba0987654321fedcba09</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-5238540470214596~5973497541</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+</dict>
+</plist>

@@ -1,0 +1,133 @@
+/*
+  Localizable.strings (English)
+  HealthScanner
+*/
+
+// MARK: - Tab Bar
+"tab.records" = "Records";
+"tab.scan" = "Scan";
+"tab.settings" = "Settings";
+
+// MARK: - Scan View
+"scan.title" = "Health Data Scanner";
+"scan.description" = "Capture screens of blood pressure monitors, scales, and glucose meters\nAutomatically recognize and save to Health app";
+"scan.start" = "Start Scan";
+"scan.back" = "Back";
+"scan.openCamera" = "Open Camera";
+"scan.chooseFromLibrary" = "Choose from Library";
+"scan.scanning" = "Recognizing...";
+"scan.error.title" = "Scan Error";
+"scan.error.unknown" = "Unknown error";
+"scan.camera.permission.title" = "Camera Permission Required";
+"scan.camera.permission.message" = "Camera permission is required to open the camera. Please enable camera permission in Settings.";
+"scan.camera.permission.settings" = "Go to Settings";
+
+// MARK: - Result Confirm View
+"result.title" = "Confirm Data";
+"result.detected" = "Detected Data";
+"result.measurementTime" = "Measurement Time";
+"result.notes" = "Notes (Optional)";
+"result.notes.placeholder" = "Add notes...";
+"result.save" = "Save to Health App";
+"result.saved" = "Saved";
+"result.saving" = "Saving...";
+"result.cancel" = "Cancel";
+"result.confirm" = "OK";
+"result.noData.title" = "No Data Detected";
+"result.noData.message" = "No valid health data detected in the image.\nPlease ensure:\n• Image is clear\n• Device screen is fully visible\n• Good lighting without glare";
+"result.error.title" = "Save Error";
+"result.permission.title" = "Health App Permission Required";
+"result.permission.message" = "Health App authorization is required to save data.";
+
+// MARK: - Health Data
+"health.bloodPressure" = "Blood Pressure";
+"health.pulse" = "Pulse";
+"health.height" = "Height";
+"health.weight" = "Weight";
+"health.bloodSugar" = "Blood Glucose";
+"health.heartRate" = "Heart Rate";
+"health.bodyTemperature" = "Body Temperature";
+"health.systolic" = "Systolic";
+"health.diastolic" = "Diastolic";
+
+// MARK: - Blood Sugar Types
+"bloodSugar.fasting" = " (Fasting)";
+"bloodSugar.postprandial" = " (After Meal)";
+"bloodSugar.random" = " (Random)";
+
+// MARK: - Time Relative
+"time.now" = "Now";
+"time.setToNow" = "Set to Now";
+"time.future" = "Future time";
+"time.minutesAgo" = "%d min ago";
+"time.hoursAgo" = "%d hr ago";
+"time.hoursMinutesAgo" = "%d hr %d min ago";
+"time.daysAgo" = "%d days ago";
+
+// MARK: - History View
+"history.title" = "Records";
+"history.filter.all" = "All";
+"history.filter.select" = "Select";
+"history.empty.title" = "No Records";
+"history.empty.message" = "Start scanning health devices to create records";
+"history.delete.error" = "Failed to delete record";
+"today" = "Today";
+"yesterday" = "Yesterday";
+
+// MARK: - Record Detail View
+"record.title" = "Record Details";
+"record.value" = "Value";
+"record.details" = "Details";
+"record.time" = "Record Time";
+"record.syncStatus" = "Sync to Health App";
+"record.synced" = "Synced";
+"record.notSynced" = "Not Synced";
+"record.notes" = "Notes";
+"record.photo" = "Captured Photo";
+"record.done" = "Done";
+
+// MARK: - Settings View
+"settings.title" = "Settings";
+"settings.account" = "Account";
+"settings.appearance" = "Appearance";
+"settings.appearance.system" = "System";
+"settings.appearance.light" = "Light";
+"settings.appearance.dark" = "Dark";
+"settings.permissions" = "Permissions";
+"settings.permissions.needed" = "Authorization Needed";
+"settings.permissions.footer.authorized" = "All health data types are authorized. Scan data can be saved to Health app normally.";
+"settings.permissions.footer.unauthorized" = "After authorization, scanned weight, height, blood pressure and other data can be saved to Health app.";
+"settings.statistics" = "Statistics";
+"settings.totalRecords" = "Total Records";
+"settings.syncedRecords" = "Synced Records";
+"settings.about" = "About";
+"settings.version" = "Version";
+"settings.openHealthApp" = "Open Health App";
+
+// MARK: - Account View
+"account.title" = "Account";
+"account.identifier" = "Identifier";
+"account.footer" = "This identifier is used to identify your device, stored securely in Keychain, and will be retained even if the app is deleted";
+
+// MARK: - Health Permission Guide View
+"permission.title" = "Health App Permission Setup";
+"permission.steps.header" = "Permission Setup Steps";
+"permission.steps.footer" = "After completing the setup, please return to this page to confirm permission status";
+"permission.step1.title" = "Open Health App";
+"permission.step2.title" = "Tap Top Right - Profile";
+"permission.step3.title" = "Privacy - Apps";
+"permission.step4.title" = "Find HealthScanner";
+"permission.step5.title" = "Enable All Permissions";
+"permission.quickAction" = "Open Health App";
+
+// MARK: - Toast Messages
+"toast.saved" = "Saved";
+"toast.copied" = "Copied";
+
+// MARK: - Common
+"common.ok" = "OK";
+"common.cancel" = "Cancel";
+"common.done" = "Done";
+"common.save" = "Save";
+"common.delete" = "Delete";
+"common.error" = "Error";

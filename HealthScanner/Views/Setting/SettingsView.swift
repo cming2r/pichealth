@@ -81,15 +81,8 @@ struct SettingsView: View {
                     Text("settings.statistics".localized)
                 }
 
-                // 關於
+                // 健康 App
                 Section {
-                    HStack {
-                        Text("settings.version".localized)
-                        Spacer()
-                        Text("1.0.0")
-                            .foregroundColor(.secondary)
-                    }
-
                     Button(action: {
                         openHealthApp()
                     }) {
@@ -101,8 +94,6 @@ struct SettingsView: View {
                                 .foregroundColor(.secondary)
                         }
                     }
-                } header: {
-                    Text("settings.about".localized)
                 }
             }
             .navigationTitle("settings.title".localized)

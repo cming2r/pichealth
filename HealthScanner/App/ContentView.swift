@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab = 1
+    @State private var adRefreshID = UUID().uuidString
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -20,6 +21,8 @@ struct ContentView: View {
                     }
                     .tag(0)
                     .environment(\.selectedTab, $selectedTab)
+                    .toolbarBackground(Color(uiColor: .systemBackground), for: .tabBar)
+                    .toolbarBackground(.visible, for: .tabBar)
 
                 // 掃描頁面
                 ScanView()
@@ -28,6 +31,8 @@ struct ContentView: View {
                     }
                     .tag(1)
                     .environment(\.selectedTab, $selectedTab)
+                    .toolbarBackground(Color(uiColor: .systemBackground), for: .tabBar)
+                    .toolbarBackground(.visible, for: .tabBar)
 
                 // 設定
                 SettingsView()
@@ -36,18 +41,21 @@ struct ContentView: View {
                     }
                     .tag(2)
                     .environment(\.selectedTab, $selectedTab)
+                    .toolbarBackground(Color(uiColor: .systemBackground), for: .tabBar)
+                    .toolbarBackground(.visible, for: .tabBar)
             }
 
             // 廣告橫幅（緊貼在 Tab Bar 上方）
             VStack(spacing: 0) {
                 Spacer()
-                AdMobBannerContainer()
-                    .background(Color(.systemBackground))
-                // 预留 Tab Bar 的高度空间
-                Color.clear
-                    .frame(height: 49) // Tab Bar 的标准高度
+                AdMobBannerContainer(refreshID: adRefreshID)
+                    .padding(.bottom, 49) // Tab Bar 的標準高度
             }
-            .ignoresSafeArea(.keyboard) // 避免键盘弹出时的影响
+            .ignoresSafeArea(.keyboard)
+        }
+        .onChange(of: selectedTab) {
+            // 切換 tab 時重新載入廣告
+            adRefreshID = UUID().uuidString
         }
     }
 }

@@ -13,12 +13,12 @@ import Combine
 class AppearanceManager: ObservableObject {
     static let shared = AppearanceManager()
 
-    @Published var currentMode: AppearanceMode = .system
+    @Published var currentMode: AppearanceMode = .light
 
     private init() {
-        // 从 UserDefaults 读取保存的设置
-        let savedMode = UserDefaults.standard.string(forKey: "appearanceMode") ?? AppearanceMode.system.rawValue
-        self.currentMode = AppearanceMode(rawValue: savedMode) ?? .system
+        // 从 UserDefaults 读取保存的设置，首次安装默认为 light 模式
+        let savedMode = UserDefaults.standard.string(forKey: "appearanceMode") ?? AppearanceMode.light.rawValue
+        self.currentMode = AppearanceMode(rawValue: savedMode) ?? .light
     }
 
     /// 更新外观模式并保存

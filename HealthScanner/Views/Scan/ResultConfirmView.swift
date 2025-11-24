@@ -306,12 +306,19 @@ struct ResultConfirmView: View {
         }
     }
 
-    /// 判斷是否為"現在"時間（3分鐘內）
+    /// 判斷是否為"現在"時間（過去3分鐘內）
     private var isNowTime: Bool {
         let now = Date()
         let interval = now.timeIntervalSince(selectedDate)
+
+        // 如果是未來時間，一定不是"現在"
+        if interval < 0 {
+            return false
+        }
+
+        // 只有過去 3 分鐘內才算"現在"
         let minutes = Int(interval / 60)
-        return abs(minutes) < 3
+        return minutes < 3
     }
 
     /// 初始化日期時間
